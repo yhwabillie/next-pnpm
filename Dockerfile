@@ -1,4 +1,4 @@
-FROM node:19-alpine AS base
+FROM node:20-alpine AS base
 
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
@@ -19,14 +19,6 @@ WORKDIR /app
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
-
-# RUN rm -rf ./.yarn
-# # COPY --from=builder /app/.yarn/cache ./.yarn/cache
-
-# COPY --from=builder /app/.yarn/cache ./.yarn/cache
-# COPY --from=builder /app/.yarn/releases ./.yarn/releases
-# # COPY --from=builder /app/.yarn/unplugged ./.yarn/unplugged
-# # COPY --from=builder /app/.yarn/install-state.gz ./.yarn/install-state.gz
 
 ENV HOSTNAME "0.0.0.0"
 EXPOSE 3000
