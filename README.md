@@ -1,5 +1,6 @@
 ## :memo: Title: next-pnpm
 패키지 매니저 pnpm으로 빌드한 NextJS 기본 템플릿입니다.  
+최초 빌드를 기준으로 하기위해 workflow 캐시 작업은 제외하였습니다.   
 `pnpm store prune` 명령어로 pnpm의 cache를 삭제 후 측정하였습니다.
 
 1) [🏠로컬] Dependency install 시간   
