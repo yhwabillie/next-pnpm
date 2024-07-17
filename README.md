@@ -26,7 +26,7 @@
 |:------|
 |![pnpm NextJS 로컬 docker 이미지 size 스크린샷](./public/md/pnpm_img_4.png)|
 
-5) [🐳Docker] 로컬 이미지 build 시간 
+### 5) [🐳Docker] 로컬 이미지 build 시간 
 |결과: `38.3s`|
 |:------|
 |![pnpm NextJS 로컬 docker 이미지 build 시간 스크린샷](./public/md/pnpm_img_5.png)|
